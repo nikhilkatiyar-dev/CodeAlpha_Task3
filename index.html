@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    /* Basic Reset */
+    * { margin:0; padding:0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; background: #f4f4f4; color: #333; }
+    a { text-decoration: none; color: inherit; }
+
+    /* Navbar */
+    nav { background: #222; color: #fff; display: flex; justify-content: space-around; padding: 15px; position: sticky; top:0; z-index: 100; }
+    nav a { color: #fff; padding: 5px 10px; transition: 0.3s; }
+    nav a:hover { background: #fff; color: #222; border-radius: 5px; }
+
+    /* Sections */
+    section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+
+    h1, h2 { margin-bottom: 20px; text-align: center; }
+
+    /* About */
+    #about { background: #fff; border-radius: 10px; padding: 40px; margin-bottom: 20px; }
+
+    /* Skills */
+    #skills { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+    .skill { background: #222; color: #fff; padding: 15px 20px; border-radius: 10px; transition: 0.3s; }
+    .skill:hover { transform: scale(1.05); }
+
+    /* Projects */
+    #projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .project { background: #fff; padding: 20px; border-radius: 10px; transition: 0.3s; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+    .project:hover { transform: translateY(-5px); box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+
+    /* Contact */
+    #contact { background: #fff; border-radius: 10px; padding: 40px; text-align: center; }
+    #contact p { margin-bottom: 10px; }
+
+    /* Footer */
+    footer { text-align: center; padding: 20px; background: #222; color: #fff; margin-top: 20px; }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- About Section -->
+<section id="about">
+  <h1>About Me</h1>
+  <p>Hello! I am Nikhil Katiyar, MCA student and aspiring Web Developer. I love creating web applications and learning new technologies.</p>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skill">HTML</div>
+  <div class="skill">CSS</div>
+  <div class="skill">JavaScript</div>
+  <div class="skill">React (Learning)</div>
+  <div class="skill">Git & GitHub</div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project">
+    <h3>Calculator App</h3>
+    <p>Basic calculator using HTML, CSS, and JS.</p>
+  </div>
+  <div class="project">
+    <h3>Image Gallery</h3>
+    <p>Responsive gallery with lightbox view.</p>
+  </div>
+  <div class="project">
+    <h3>Portfolio Site</h3>
+    <p>This personal portfolio to showcase my skills and projects.</p>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>Email: nikhil@example.com</p>
+  <p>Phone: +91-XXXXXXXXXX</p>
+</section>
+
+<!-- Footer -->
+<footer>
+  &copy; 2025 Nikhil Katiyar
+</footer>
+
+</body>
+</html>
